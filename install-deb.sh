@@ -1,18 +1,18 @@
 cd deb
-cd [フォント名]
+cd Roboto_Mono
 mkdir usr
 cd usr
 mkdir share
 cd share
-wget -O [zipファイルの名前] [ダウンロードファイルのURL(URLが変わらないもの(Google Fontsなど)がベスト!)]
-mkdir [フォント名]
-unzip [zipファイルの名前] -d [フォント名]
-mv ./[フォントがあるディレクトリ]/*.ttf ./
-rm -r [フォント名]
-mkdir [フォント名]
-mv ./*.ttf [フォント名]
-rm [zipファイルの名前]
+wget -O roboto-mono.zip https://fonts.google.com/download?family=Roboto+Mono
+mkdir Roboto_Mono
+unzip roboto-mono.zip -d Roboto_Mono
+mv ./Roboto_Mono/static/*.ttf ./
+rm -r Roboto_Mono
+mkdir Roboto_Mono
+mv ./*.ttf Roboto_Mono
+rm roboto-mono.zip
 cd ../../..
-dpkg -b [フォント名]
-sudo apt install ./[フォント名].deb
+dpkg -b Roboto_Mono
+sudo apt install ./Roboto_Mono.deb
 cd ..
