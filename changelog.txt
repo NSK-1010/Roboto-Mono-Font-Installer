@@ -3,4 +3,6 @@
 Ver.1.0
 新規作成
 
-#[インストーラーの名前]
+# Roboto-Mono-Font-Installer
+2020.6.17
+フォーク
