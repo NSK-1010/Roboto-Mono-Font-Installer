@@ -1,3 +1,5 @@
+#!/bin/bash
+
 wget -O roboto-mono.zip https://fonts.google.com/download?family=Roboto+Mono
 mkdir Roboto_Mono
 unzip roboto-mono.zip -d Roboto_Mono
