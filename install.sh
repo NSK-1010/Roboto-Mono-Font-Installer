@@ -1,7 +1,7 @@
-wget -O [zipファイルの名前] [ダウンロードファイルのURL(URLが変わらないもの(Google Fontsなど)がベスト!)]
-mkdir [フォント名]
-unzip [zipファイルの名前] -d [フォント名]
-sudo mkdir /usr/share/fonts/[フォント名]
-sudo mv ./[フォントがあるディレクトリ]/*.ttf /usr/share/fonts/Inter/
-rm -r [フォント名]
-rm [zipファイルの名前]
+wget -O roboto-mono.zip https://fonts.google.com/download?family=Roboto+Mono
+mkdir Roboto_Mono
+unzip roboto-mono.zip -d Roboto_Mono
+sudo mkdir /usr/share/fonts/Roboto_Mono
+sudo mv ./static/*.ttf /usr/share/fonts/Roboto_Mono/
+rm -r Roboto_Mono
+rm roboto-mono.zip
