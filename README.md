@@ -1,11 +1,5 @@
-# Font-Installer-Base
-フォントをLinuxに簡単にインストールするためのスクリプトのベースです。
-
-### 改変方法
-
-[install.sh](./install.sh),[install-deb.sh](./install-deb.sh),[control](./deb/fontname/control),[changelog.txt](./changelog.txt)の[]の部分とこの文書(この段落のもの以外)を中に書いてあるものに従って書き換え([]はいりません)、[changelog.txt](./changelog.txt)とこの文書を加筆し、この文書を自分好みに書き換えてください。
-
-そして、[fontname](./deb/fontname)をインストールするフォント名に変更してください。
+# Roboto-Mono-Font-Installer
+Roboto Monoをインストールするためのスクリプトです。
 
 ### インストール方法
 
@@ -16,8 +10,8 @@ sudo権限が必要です。
 #### 通常インストール
 
 ```
-git clone https://github.com/[ユーザー名]/[リポジトリ名].git
-cd [リポジトリ名]
+git clone https://github.com/NSK-1010/Roboto-Mono-Font-Installer.git
+cd Roboto-Mono-Font-Installer
 sudo bash ./install.sh
 ```
 
@@ -26,9 +20,17 @@ sudo bash ./install.sh
 Debian系またはUbuntu系のみで使用できます。
 
 ```
-git clone https://github.com/[ユーザー名]/[リポジトリ名].git
-cd [リポジトリ名]
+git clone https://github.com/NSK-1010/Roboto-Mono-Font-Installer.git
+cd Roboto-Mono-Font-Installer
 sudo bash ./install-deb.sh
+```
+
+#### debファイルを作成するのみ
+
+```
+git clone https://github.com/NSK-1010/Roboto-Mono-Font-Installer.git
+cd Roboto-Mono-Font-Installer
+sudo bash ./build-deb.sh
 ```
 
 ### 更新履歴について
