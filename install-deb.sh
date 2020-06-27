@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd deb
 cd Roboto_Mono
 mkdir usr
