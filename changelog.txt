@@ -5,4 +5,9 @@ Ver.1.0
 
 # Roboto-Mono-Font-Installer
 2020.6.17
+Ver.1.0
 フォーク
+
+2020.7.4
+Ver.1.1
+Ruby化 他のUnix系にも対応
