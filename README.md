@@ -1,36 +1,30 @@
 # Roboto-Mono-Font-Installer
-Roboto Monoをインストールするためのスクリプトです。
+Roboto MonoをUnix系に簡単にインストールするためのスクリプトです。
 
 ### インストール方法
 
 ターミナルでこちらのコマンドを入力してください。
 
-sudo権限が必要です。
+一般ユーザーの場合はsudo権限が必要です。
 
 #### 通常インストール
 
-```
-git clone https://github.com/NSK-1010/Roboto-Mono-Font-Installer.git
-cd Roboto-Mono-Font-Installer
-sudo bash ./install.sh
-```
-
-#### debファイルを作成してインストール
-
-Debian系またはUbuntu系のみで使用できます。
+##### rootユーザーまたは管理者
 
 ```
 git clone https://github.com/NSK-1010/Roboto-Mono-Font-Installer.git
+git checkout ruby
 cd Roboto-Mono-Font-Installer
-sudo bash ./install-deb.sh
+ruby ./install.rb
 ```
 
-#### debファイルを作成するのみ
+##### sudo
 
 ```
 git clone https://github.com/NSK-1010/Roboto-Mono-Font-Installer.git
+git checkout ruby
 cd Roboto-Mono-Font-Installer
-sudo bash ./build-deb.sh
+sudo ruby ./install.rb
 ```
 
 ### 更新履歴について
