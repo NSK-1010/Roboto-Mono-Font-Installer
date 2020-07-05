@@ -3,4 +3,5 @@ Maintainer: PianoCat <kotone.olin1010@gmail.com>
 Section: fonts
 Priority: optional
 Architecture: all
+Version: 1.0
 Description: Roboto Monoのカスタムdebパッケージです。
