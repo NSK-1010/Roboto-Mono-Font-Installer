@@ -2,6 +2,7 @@
 Roboto Monoをインストールするためのスクリプトです。
 
 ### 依存環境
+
 `bash`,`mv`,`wget`,`unzip`,`mkdir`,`rm`
 
 ### インストール方法
