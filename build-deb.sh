@@ -1,19 +1,26 @@
 #!/bin/bash
 
+zipname="`roboto-mono.zip`"
+downloadfile="`https://fonts.google.com/download?family=Roboto+Mono`"
+fontname="`Roboto_Mono`"
+dir="`Roboto_Mono/static`"
+
 cd deb
-cd Roboto_Mono
+cd "${fontname}"
 mkdir usr
 cd usr
 mkdir share
 cd share
-wget -O roboto-mono.zip https://fonts.google.com/download?family=Roboto+Mono
-mkdir Roboto_Mono
-unzip roboto-mono.zip -d Roboto_Mono
-mv ./Roboto_Mono/static/*.ttf ./
-rm -r Roboto_Mono
-mkdir Roboto_Mono
-mv ./*.ttf Roboto_Mono
-rm roboto-mono.zip
+mkdir fonts
+cd fonts
+wget -O "${zipname}" "${downloadfile}"
+mkdir "${fontname}"
+unzip "${zipname}" -d "${fontname}"
+mv ./${dir}/*.ttf ./
+rm -r "${fontname}"
+mkdir "${fontname}"
+mv ./*.ttf "${fontname}"
+rm "${zipname}"
 cd ../../..
-dpkg -b Roboto_Mono
+dpkg -b "${fontname}"
 cd ..
