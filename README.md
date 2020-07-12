@@ -1,6 +1,9 @@
 # Roboto-Mono-Font-Installer
 Roboto Monoをインストールするためのスクリプトです。
 
+### 依存環境
+`bash`,`mv`,`wget`,`unzip`,`mkdir`,`rm`
+
 ### インストール方法
 
 ターミナルでこちらのコマンドを入力してください。
